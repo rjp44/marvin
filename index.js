@@ -8,7 +8,7 @@ const CREDENTIALS = {
   uri: process.env.INBOUND_HOOK.replace(/\/$/,'')
 };
 
-const { NUMBER, VICTIM } = process.env;
+const { NUMBER} = process.env;
 
 const simwood = require('simwood-api-node').init(CREDENTIALS);
 simwood.server((app, id, data) => handleMessage(data, simwood));
@@ -16,7 +16,6 @@ simwood.server((app, id, data) => handleMessage(data, simwood));
 
 async function doStuff(){
   simwood.numberConfigureSmsReceive(NUMBER);
-  await simwood.messagingSmsSend(NUMBER, VICTIM, "hello Rob");
   return(true);
 }
 

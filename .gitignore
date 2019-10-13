@@ -68,7 +68,9 @@ typings/
 # Yarn Integrity file
 .yarn-integrity
 
-google.json
+google*.json
+
+yarn.lock
 
 # dotenv environment variables file
 .env

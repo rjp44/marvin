@@ -22,7 +22,7 @@ async function handleMessage(data, simwood) {
           // The query to send to the dialogflow agent
           text: data.message,
           // The language used by the client (en-US)
-          languageCode: 'en-US',
+          languageCode: 'en-GB',
         },
       },
     };
