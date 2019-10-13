@@ -4,7 +4,8 @@
   "description": "Bringing Marvin the Paranoid android to life via SMS",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
   },
   "repository": {
     "type": "git",
@@ -21,7 +22,10 @@
   },
   "homepage": "https://github.com/rjp44/marvin#readme",
   "dependencies": {
+    "dialogflow": "^0.12.0",
     "dotenv": "^8.1.0",
+    "express": "^4.17.1",
+    "morgan": "^1.9.1",
     "request-promise-native": "^1.0.7",
     "simwood-api-node": "rjp44/simwood-node-api"
   }
